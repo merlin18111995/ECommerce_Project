@@ -31,6 +31,8 @@ public class TC02_LoginTest extends BaseClass{
 		MyAccountPage_POM mp=new MyAccountPage_POM(driver);
 		
 		Assert.assertEquals(mp.is_MyAccntPageExist(), true,"Heading not matching");
+		
+		
 		}
 		catch(Exception e) {
 			Assert.fail();

@@ -8,3 +8,17 @@
 14:31:49.270 [main] INFO  testCases.TC03_LoginDataDrivenTest - Clicked on Login link
 14:31:49.934 [main] INFO  testCases.TC03_LoginDataDrivenTest - Clicked on Login button
 14:31:53.917 [main] INFO  testCases.TC03_LoginDataDrivenTest - ***Finished TC03_LoginDataDrivenTest***
+13:36:56.493 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
+13:36:57.348 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
+13:37:02.092 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
+13:37:03.229 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
+13:39:32.669 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
+13:39:34.921 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
+13:39:37.763 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
+13:39:41.097 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
+13:39:43.249 [main] INFO  testCases.TC02_LoginTest - ***Finished TC02_LoginTest***
+13:43:33.360 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
+13:43:37.985 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
+13:43:41.477 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
+13:43:45.397 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
+13:43:49.905 [main] INFO  testCases.TC02_LoginTest - ***Finished TC02_LoginTest***
