@@ -1,6 +1,7 @@
 package testCases;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage_POM;
@@ -32,7 +33,7 @@ public class TC02_LoginTest extends BaseClass{
 		
 		Assert.assertEquals(mp.is_MyAccntPageExist(), true,"Heading not matching");
 		
-		
+		mp.click_Logout();
 		}
 		catch(Exception e) {
 			Assert.fail();

@@ -18,11 +18,15 @@ public class AccountRegPage_POM extends BasePage{
 	WebElement txt_lname;
 	@FindBy(id="input-email")
 	WebElement txt_email;
+	@FindBy(id="input-telephone")
+	WebElement txt_telephone;
 	@FindBy(id="input-password")
 	WebElement txt_password;
+	@FindBy(id="input-confirm")
+	WebElement txt_confirmPassword;
 	@FindBy(xpath="//input[@name='agree' and @type='checkbox']")
 	WebElement chkbx_agree;
-	@FindBy(xpath="//button[@type='submit']")
+	@FindBy(xpath="//input[@type='submit']")
 	WebElement btn_continue;
 	@FindBy(xpath="//div[@id='content']//h1")
 	WebElement txt_successMsg;
@@ -41,8 +45,16 @@ public class AccountRegPage_POM extends BasePage{
 		txt_email.sendKeys(Email);
 	}
 	
+	public void set_telephonenum(String telephoneNum) {
+		txt_telephone.sendKeys(telephoneNum);
+	}
+	
 	public void set_Password(String Password) {
 		txt_password.sendKeys(Password);
+	}
+	
+	public void set_confirmPassword(String Password) {
+		txt_confirmPassword.sendKeys(Password);
 	}
 	
 	public void click_Agree() {

@@ -30,8 +30,10 @@ public class TC01_AccountRegistrationTest extends BaseClass {
 		logger.info("Providing customer data");
 		actreg.set_FName("FName01");
 		actreg.set_LName("Lname01");
-		actreg.set_Email("test0621a@gmail.com");
-		actreg.set_Password("Test@0621");
+		actreg.set_Email("test0623@gmail.com");
+		actreg.set_telephonenum("9876543210");
+		actreg.set_Password("Test@0623");
+		actreg.set_confirmPassword("Test@0623");
 		actreg.click_Agree();
 		actreg.click_Continue();
 		logger.info("Clicked on the Continue");

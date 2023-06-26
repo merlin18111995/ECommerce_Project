@@ -16,6 +16,15 @@ public class HomePage_POM extends BasePage {
 	WebElement link_register;
 	@FindBy(linkText="Login")
 	WebElement link_login;
+	@FindBy(xpath="//input[@name='search']")
+	WebElement txt_Search;
+	@FindBy(xpath="//button[@type='button' and @class='btn btn-default btn-lg']")
+	WebElement btn_Search;
+	@FindBy(linkText="Logout")
+	WebElement link_logout;
+	//li[@class='dropdown open']//ul//li//a[text()='Logout']
+	
+	
 	
 	public void click_MyAcct() {
 		link_myAccnt.click();
@@ -29,6 +38,19 @@ public class HomePage_POM extends BasePage {
 		link_login.click();
 	}
 	
+	public void click_Logout() {
+		link_logout.click();
+	}
+	public void search_Prod(String prod) {
+		txt_Search.sendKeys(prod);
+	}
+	
+	public void click_Search() {
+		btn_Search.click();
+	}
 	
 	
-}
+	}
+	
+	
+

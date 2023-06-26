@@ -1,24 +1,43 @@
-14:30:17.179 [main] INFO  testCases.TC01_AccountRegistrationTest - ***Starting TC01_AccountRegistrationTest***
-14:30:18.179 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the MyAcct link
-14:30:19.509 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the Register link
-14:30:19.538 [main] INFO  testCases.TC01_AccountRegistrationTest - Providing customer data
-14:30:21.992 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the Continue
-14:30:25.091 [main] INFO  testCases.TC01_AccountRegistrationTest - Verifying the title of the page
-14:31:48.494 [main] INFO  testCases.TC03_LoginDataDrivenTest - Clicked on My Account link
-14:31:49.270 [main] INFO  testCases.TC03_LoginDataDrivenTest - Clicked on Login link
-14:31:49.934 [main] INFO  testCases.TC03_LoginDataDrivenTest - Clicked on Login button
-14:31:53.917 [main] INFO  testCases.TC03_LoginDataDrivenTest - ***Finished TC03_LoginDataDrivenTest***
-13:36:56.493 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
-13:36:57.348 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
-13:37:02.092 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
-13:37:03.229 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
-13:39:32.669 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
-13:39:34.921 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
-13:39:37.763 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
-13:39:41.097 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
-13:39:43.249 [main] INFO  testCases.TC02_LoginTest - ***Finished TC02_LoginTest***
-13:43:33.360 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
-13:43:37.985 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
-13:43:41.477 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
-13:43:45.397 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
-13:43:49.905 [main] INFO  testCases.TC02_LoginTest - ***Finished TC02_LoginTest***
+21:58:57.569 [main] INFO  testCases.TC06_EndToEndTest - ***Starting TC06_EndToEndTest - test_EndToEnd***
+21:58:57.948 [main] INFO  testCases.TC06_EndToEndTest - Clicked on the MyAcct link
+21:58:59.171 [main] INFO  testCases.TC06_EndToEndTest - Clicked on the Register link
+21:58:59.177 [main] INFO  testCases.TC06_EndToEndTest - Providing customer data to create an account
+21:59:01.790 [main] INFO  testCases.TC06_EndToEndTest - Clicked on the Continue button
+21:59:03.882 [main] INFO  testCases.TC06_EndToEndTest - Validating the successmessage after account creation
+21:59:03.887 [main] INFO  testCases.TC06_EndToEndTest - Success message validated
+21:59:04.632 [main] INFO  testCases.TC06_EndToEndTest - Clicked on the Logout link
+21:59:05.349 [main] INFO  testCases.TC06_EndToEndTest - Clicked on the Login link
+21:59:05.355 [main] INFO  testCases.TC06_EndToEndTest - Providing details to login
+21:59:06.623 [main] INFO  testCases.TC06_EndToEndTest - Verifying whether login successful or not
+21:59:06.772 [main] INFO  testCases.TC06_EndToEndTest - Logged in successfully
+21:59:06.773 [main] INFO  testCases.TC06_EndToEndTest - Searching for a product
+21:59:08.626 [main] INFO  testCases.TC06_EndToEndTest - Validating whether search is successful or not
+21:59:08.677 [main] INFO  testCases.TC06_EndToEndTest - Search product is successful
+21:59:11.117 [main] INFO  testCases.TC06_EndToEndTest - clicked on the product
+21:59:11.177 [main] INFO  testCases.TC06_EndToEndTest - Navigated to the product page & filling details
+21:59:11.724 [main] INFO  testCases.TC06_EndToEndTest - Validing whether success message displayed after adding product to cart
+21:59:15.116 [main] INFO  testCases.TC06_EndToEndTest - Product added successfully to the cart & message also displayed
+21:59:15.969 [main] INFO  testCases.TC06_EndToEndTest - Clicked on Cart-->View cart
+21:59:15.986 [main] INFO  testCases.TC06_EndToEndTest - Validating product details displayed on the view cart page
+21:59:18.675 [main] INFO  testCases.TC06_EndToEndTest - validating whether navigated to checkout page or not
+21:59:18.726 [main] INFO  testCases.TC06_EndToEndTest - navigated to checkout page
+21:59:38.881 [main] INFO  testCases.TC06_EndToEndTest - Entering data in Billing Details Section
+21:59:41.442 [main] INFO  testCases.TC06_EndToEndTest - Completed entering details in Billing Details Section
+21:59:43.170 [main] INFO  testCases.TC06_EndToEndTest - Completed payment
+21:59:43.170 [main] INFO  testCases.TC06_EndToEndTest - ***Finished TC06_EndToEndTest - test_EndToEnd***
+22:08:28.967 [main] INFO  testCases.TC01_AccountRegistrationTest - ***Starting TC01_AccountRegistrationTest***
+22:08:29.405 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the MyAcct link
+22:08:30.442 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the Register link
+22:08:30.462 [main] INFO  testCases.TC01_AccountRegistrationTest - Providing customer data
+22:08:34.353 [main] INFO  testCases.TC01_AccountRegistrationTest - Clicked on the Continue
+22:08:37.425 [main] INFO  testCases.TC01_AccountRegistrationTest - Verifying the title of the page
+22:08:37.429 [main] INFO  testCases.TC01_AccountRegistrationTest - ***Finished TC01_AccountRegistrationTest***
+22:08:49.867 [main] INFO  testCases.TC02_LoginTest - ***Starting TC02_LoginTest***
+22:08:50.006 [main] INFO  testCases.TC02_LoginTest - Clicked on My Account link
+22:08:50.614 [main] INFO  testCases.TC02_LoginTest - Clicked on Login link
+22:08:54.017 [main] INFO  testCases.TC02_LoginTest - Clicked on Login button
+22:08:54.937 [main] INFO  testCases.TC02_LoginTest - ***Finished TC02_LoginTest***
+22:09:23.105 [main] INFO  testCases.TC04_SearchProduct - ***Starting TC04_SearchProduct***
+22:09:25.954 [main] INFO  testCases.TC04_SearchProduct - ***Finished TC04_SearchProduct***
+22:10:04.484 [main] INFO  testCases.TC05_AddToCartPageTest - ***Starting TC05_AddToCartPageTest***
+22:10:51.201 [main] INFO  testCases.TC05_AddToCartPageTest - ***Finished TC05_AddToCartPageTest***

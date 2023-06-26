@@ -39,22 +39,28 @@ public class TC03_LoginDataDrivenTest extends BaseClass {
 			if(exp.equals("Valid")) {
 				if(tgtpage_status==true) { //this means login is successful with valid data
 					mp.click_MyAcct();
-					mp.click_Logout2();
+					mp.click_Logout();
 					Assert.assertTrue(true);
+					logger.info("Login is successful with valid data");
 				}
 				else { //this means login is not successful with valid data
 					Assert.assertTrue(false);
+					logger.info("Login is not successful with valid data");
+					
 				}
 			}
 			if(exp.equals("InValid")) { 
 				if((tgtpage_status==true)) { //this means login is successful with invalid data
 					mp.click_MyAcct();
-					mp.click_Logout2();
+					mp.click_Logout();
 					Assert.assertTrue(false);
+					logger.info("Login is successful with invalid data");
 				}
 				else {	//this means login is not successful with invalid data
 					Assert.assertTrue(true); 
-				}
+					Assert.assertEquals(lp.is_alertMsgDisplayed(), true);
+					logger.info("Login is not successful with invalid data");
+					}
 			}
 		}
 		catch(Exception e) {

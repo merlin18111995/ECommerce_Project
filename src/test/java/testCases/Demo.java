@@ -1,41 +1,77 @@
 package testCases;
 
-import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.time.Duration;
 
+import java.util.List;
 
-import utilities.ExcelUtility;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import pageObjects.HomePage_POM;
+import pageObjects.ProductPage_POM;
+import pageObjects.SearchPage_POM;
+import testBase.BaseClass;
 
 public class Demo {
-
-	public static void main(String[] args) throws IOException {
-		//String file=System.getProperty("user.dir")+"//TestData//Opencart_data.xlsx";
-		String path=".\\testData\\Opencart_data.xlsx";
-		ExcelUtility ul=new ExcelUtility(path);
+	public String check() {
+		String exp_price="$602.19";
+		Double d=Double.parseDouble((exp_price.replace("$", "")));
 		
-		int rowcount=ul.getRowCount("Sheet1");
-		int colcount=ul.getCellCount("Sheet1", rowcount);
-	   
-		System.out.println(rowcount);
-		System.out.println(colcount);
+		DecimalFormat toTheFormat = new DecimalFormat("#.00");
+		toTheFormat.setGroupingUsed(true);
+		toTheFormat.setGroupingSize(3);
+        System.out.println("$"+toTheFormat.format(d));
+        return (toTheFormat.format(d));
+}
+	
+	@Test
+	void addtocart() throws InterruptedException {
 		
-		String logindata[][]=new String[rowcount][colcount];
+		String quantity="2";
+		Demo dm=new Demo();
+		//(dm.check())*(Integer.parseInt(quantity));
+		/*String exp_price="$602.19";
 		
-		for (int r=1;r<=rowcount;r++) {
-			for(int c=0;c<colcount;c++) {		
-//			String data=ul.getCellData("Sheet1",r, c);
-		//	System.out.println(data);
-			logindata[r-1][c]= ul.getCellData("Sheet1",r, c);
-			} 
-			
-		//	System.out.println();
-		}
+		Double d=(Double.parseDouble((exp_price.replace("$", ""))))*(Integer.parseInt(quantity));
+		System.out.println(d);
+		String exp_totPrice="$"+(Double.parseDouble((exp_price.replace("$", ""))))*(Integer.parseInt(quantity));
+		System.out.println(exp_totPrice);
 		
-		for (int i=0;i<logindata.length;i++) {
-			for(int j=0;j<logindata[i].length;j++) {
-				System.out.println(logindata[i][j]+"	");	
-			}
-		}
+		NumberFormat myFormat = NumberFormat.getInstance(); 
+		myFormat.setGroupingUsed(true); 
+		//System.out.println(myFormat.format(d));
+		System.out.println("$"+myFormat.format(d));
+		
+		DecimalFormat decimalFormat = new DecimalFormat("#.##");	
+		decimalFormat.setGroupingUsed(true);
+        decimalFormat.setGroupingSize(3);
+        System.out.println("$"+decimalFormat.format(d));
+        
+        float g=(Float.parseFloat((exp_price.replace("$", ""))))*(Integer.parseInt(quantity));
+		System.out.println(g);
+		String exp_totPrice2="$"+(Float.parseFloat((exp_price.replace("$", ""))))*(Integer.parseInt(quantity));
+		System.out.println(exp_totPrice2);
+		
+		DecimalFormat toTheFormat = new DecimalFormat("#.00");
+		toTheFormat.setGroupingUsed(true);
+		toTheFormat.setGroupingSize(3);
+        System.out.println("$"+toTheFormat.format(g));
+        
+        System.out.println("$"+toTheFormat.format(d));
+		
+		//Expected total Price=1204.0 , Actual total price=$1,204.00*/
 		
 	}
-
 }
+		
+	
+
+

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OpenCartSuite" class="navigator-link">
-              <span class="suite-name border-failed">OpenCartSuite</span>
+              <span class="suite-name border-skipped">OpenCartSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-OpenCartSuite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-OpenCartSuite" class="hide-methods failed suite-OpenCartSuite"> (hide)</a> <!-- hide-methods failed suite-OpenCartSuite -->
-                      <a href="#" panel-name="suite-OpenCartSuite" class="show-methods failed suite-OpenCartSuite"> (show)</a> <!-- show-methods failed suite-OpenCartSuite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-OpenCartSuite" class="hide-methods skipped suite-OpenCartSuite"> (hide)</a> <!-- hide-methods skipped suite-OpenCartSuite -->
+                      <a href="#" panel-name="suite-OpenCartSuite" class="show-methods skipped suite-OpenCartSuite"> (show)</a> <!-- show-methods skipped suite-OpenCartSuite -->
                     </span>
-                    <div class="method-list-content failed suite-OpenCartSuite">
+                    <div class="method-list-content skipped suite-OpenCartSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCartSuite" title="testCases.TC02_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCartSuite" title="testCases.TC03_LoginDataDrivenTest" class="method navigator-link" hash-for-method="test_LoginDD">test_LoginDD</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-OpenCartSuite -->
+                    </div> <!-- method-list-content skipped suite-OpenCartSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,26 +119,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OpenCartSuite" class="panel OpenCartSuite">
-          <div class="suite-OpenCartSuite-class-failed">
+          <div class="suite-OpenCartSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC02_LoginTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC03_LoginDataDrivenTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_Login">
-                  </a> <!-- test_Login -->
-                  <span class="method-name">test_Login</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testCases.TC02_LoginTest.test_Login(TC02_LoginTest.java:38)
+                  <a name="test_LoginDD">
+                  </a> <!-- test_LoginDD -->
+                  <span class="method-name">test_LoginDD</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: .\testData\Opencart_data.xlsx (The system cannot find the file specified)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+Caused by: java.io.FileNotFoundException: .\testData\Opencart_data.xlsx (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at utilities.ExcelUtility.getRowCount(ExcelUtility.java:38)
+	at utilities.DataProviders.getData(DataProviders.java:18)
+	... 25 more
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OpenCartSuite-class-failed -->
+          </div> <!-- suite-OpenCartSuite-class-skipped -->
         </div> <!-- panel OpenCartSuite -->
         <div panel-name="test-xml-OpenCartSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -155,7 +162,7 @@
   &lt;test thread-count=&quot;3&quot; name=&quot;OpenCartTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC02_LoginTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC03_LoginDataDrivenTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OpenCartTest --&gt;
 &lt;/suite&gt; &lt;!-- OpenCartSuite --&gt;
@@ -179,22 +186,6 @@
             <span class="header-content">Groups for OpenCartSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Master</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">test_Login</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">test_Login</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-OpenCartSuite" class="panel">
@@ -213,14 +204,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_Login')
-data.setCell(0, 2, 'testCases.TC02_LoginTest')
-data.setCell(0, 3, 30728);
+data.setCell(0, 1, 'test_LoginDD')
+data.setCell(0, 2, 'testCases.TC03_LoginDataDrivenTest')
+data.setCell(0, 3, 0);
 window.suiteTableData['OpenCartSuite']= { tableData: data, tableDiv: 'times-div-OpenCartSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-OpenCartSuite">
               </div> <!-- times-div-OpenCartSuite -->
             </div> <!-- times-div -->
@@ -246,20 +237,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC02_LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC03_LoginDataDrivenTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test_Login</span>
-                <span class="method-start">215358 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">246930 ms</span>
+                <span class="method-start">18364 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -11,16 +11,14 @@ public class MyAccountPage_POM extends BasePage {
 	}
 	
 	@FindBy(xpath="//div[@id='content']//h2[normalize-space()='My Account']")
-	WebElement msg_Heading;
-	//@FindBy(xpath="//div[@class='list-group mb-3']//a[text()='Logout']")
-	//WebElement link_Logout;
-	@FindBy(xpath="//*[@id=\"column-right\"]/div/a[13]")
-	WebElement link_Logout;
-	
+	public WebElement msg_Heading;
 	@FindBy(xpath="//span[normalize-space()='My Account']")
 	WebElement link_myAccnt;
 	@FindBy(xpath="//a[text()='Logout']")
-	WebElement link_Logout2;
+	WebElement link_Logout; //logout option from My Account menu
+	@FindBy(xpath="//aside[@id='column-right']//div//a[text()='Logout']")
+	WebElement link_Logout2; //logout option from the page
+	
 	
 	
 	public boolean is_MyAccntPageExist() {
@@ -34,15 +32,13 @@ public class MyAccountPage_POM extends BasePage {
 		}
 	
 	public void click_Logout() {
-		link_Logout.click();
+		link_Logout2.click();
 	}
 	
 	public void click_MyAcct() {
 		link_myAccnt.click();
 	}
-	public void click_Logout2() {
-		link_Logout2.click();
-	}
+	
 	
 
 	

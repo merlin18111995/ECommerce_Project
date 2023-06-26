@@ -35,7 +35,7 @@ public class BaseClass {
 	@BeforeClass(groups= {"Master","Sanity","Regression"})
 	@Parameters("browser")
 	public void setUp(String br) {
-	//	public void setUp() {	
+		//public void setUp() {	
 		logger=LogManager.getLogger(this.getClass());
 		rb=ResourceBundle.getBundle("config");
 		
@@ -54,6 +54,7 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();
+		//driver.get("https://naveenautomationlabs.com/opencart/index.php?route=common/home");
 		driver.get(rb.getString("AppURL"));
 		
 		
